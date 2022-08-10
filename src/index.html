@@ -7,12 +7,109 @@
     <title>Document</title>
     <link rel="stylesheet" href="../dist/global.css" />
   </head>
-  <body>
-    <h1>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eius
-      voluptatibus laborum exercitationem non! Consectetur ut ea voluptate
-      placeat eaque iste, ex quos nemo, facere nobis voluptates ipsum
-      perferendis tempora!
-    </h1>
+  <body class="bg-dark">
+    <div class="wrapper">
+      <header class="w-full sticky top-0 bg-dark/80 backdrop-blur-sm">
+        <nav class="flex justify-center py-5 container__custom">
+          <ul class="flex gap-10 text-xl text-graywhite">
+            <li class="text-white"><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="about h-screen">
+        <div class="container__custom">
+          <div class="grid grid-cols-2">
+            <div class="flex justify-center items-center">
+              <img src="../dist/assets/main/avatar.png" alt="" />
+            </div>
+            <div class="flex justify-center flex-col text-white pl-16">
+              <div class="w-[280px]">
+                <span class="text-4xl leading-normal">
+                  Hello, I`m a <span class="font-bold">UX/UI Designer</span>
+                  <span class="text-2xl">Erin Geidt</span>
+                </span>
+              </div>
+              <div class="grid grid-cols-2 py-10 gap-5">
+                <a href="#" class="bg-primary py-3 px-5 rounded-lg font-medium"
+                  >Hire me</a
+                >
+                <a href="#" class="bg-gray py-3 px-5 rounded-lg font-medium"
+                  >Portfolio</a
+                >
+                <a
+                  href="#"
+                  class="bg-gray py-3 px-5 rounded-lg font-semibold w-full col-span-2"
+                  >Get in touch by Telegram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote">
+        <div class="container__custom">
+          <i class="text-graywhite mt-5">Massimo Vignelli:</i>
+          <p class="text-xl text-white font-medium mt-4 leading-relaxed">
+            <i>
+              “The life of a designer is a constant struggle. Fight against
+              ugliness. Just like a doctor fights a disease. For us, visual
+              disease is what we have around us, and what we are trying to do
+              is, one way or another, cure the environment through design.”
+            </i>
+          </p>
+        </div>
+      </section>
+
+      <section class="portfolio mt-16">
+        <div class="container__custom">
+          <h2 class="text-4xl font-bold text-white">Portfolio</h2>
+          <div class="grid grid-cols-3 gap-10 py-14">
+            <div class="card flex flex-col items-center">
+              <img src="../dist/assets/portfolio/Dribbble-1-.png" alt="" />
+              <span class="mt-5 font-semibold text-2xl text-white"
+                >App Design</span
+              >
+            </div>
+            <div class="card flex flex-col items-center">
+              <img src="../dist/assets/portfolio/Behance Travel1.png" alt="" />
+              <span class="mt-5 font-semibold text-2xl text-white"
+                >App Design</span
+              >
+            </div>
+            <div class="card flex flex-col items-center">
+              <img src="../dist/assets/portfolio/BehanceS.png" alt="" />
+              <span class="mt-5 font-semibold text-2xl text-white"
+                >App Design</span
+              >
+            </div>
+          </div>
+          <div class="grid grid-cols-4 gap-16 py-14 text-white">
+            <div class="flex justify-center items-center">
+              <a href="" class="text-xl">See More</a>
+            </div>
+            <div class="flex items-center">
+              <a href="" class="w-full bg-gray py-2 px-5 rounded-lg text-xl"
+                >Dribbble</a
+              >
+            </div>
+            <div class="flex items-center">
+              <a href="" class="w-full py-2 px-5 bg-primary rounded-lg text-xl"
+                >Behance</a
+              >
+            </div>
+            <div class="flex items-center">
+              <a href="" class="w-full py-2 px-5 rounded-lg bg-gray text-xl"
+                >Figma files</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
