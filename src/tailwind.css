@@ -17,3 +17,7 @@ body {
 .card-hover {
   @apply hover:bg-purple-700 transition ease-in-out hover:bg-left;
 }
+
+.active {
+  @apply text-white;
+}
