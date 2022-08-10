@@ -564,6 +564,11 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.my-28 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -574,10 +579,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .flex {
@@ -602,6 +603,10 @@ video {
 
 .w-\[28px\] {
   width: 28px;
+}
+
+.w-\[35px\] {
+  width: 35px;
 }
 
 .grid-cols-2 {
@@ -789,6 +794,30 @@ body {
 .container__custom {
   margin-left: 150px;
   margin-right: 150px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 65 65 / var(--tw-bg-opacity));
+  background-position: right;
+  padding: 1rem;
+}
+
+.card-hover {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-position: left;
 }
 
 .hover\:bg-blue-600:hover {

@@ -8,3 +8,11 @@ body {
 .container__custom {
   @apply mx-[150px];
 }
+
+.card {
+  @apply flex items-center bg-grayc p-4 rounded-lg bg-right;
+}
+
+.card-hover {
+  @apply hover:bg-blue-500 transition ease-in-out hover:bg-left;
+}
