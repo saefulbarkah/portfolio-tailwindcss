@@ -13,33 +13,82 @@
   </head>
   <body class="bg-dark">
     <div class="wrapper">
-      <!-- navbar -->
-      <header class="w-full sticky top-0 bg-dark/80 backdrop-blur-sm">
-        <nav class="flex justify-center py-5 container__custom">
-          <ul class="flex gap-10 text-xl text-graywhite font-semibold">
-            <li class="text-white"><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+      <!-- navbar desktop -->
+      <header class="w-full sticky top-0 bg-dark/50 backdrop-blur-md">
+        <nav
+          class="lg:justify-center justify-between py-5 container__custom flex"
+        >
+          <ul class="gap-10 text-md text-graywhite lg:flex hidden">
+            <li class="text-white transition">
+              <a href="" class="hover:text-white transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white transition duration-300"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white transition duration-300"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="lg:hidden flex">
+            <span class="text-2xl text-white font-bold">Erin Geidt</span>
+          </div>
+          <ul class="gap-10 text-md text-graywhite lg:hidden flex items-center">
+            <button onclick="openNav()">
+              <img src="../dist/assets/menu.svg" alt="" />
+            </button>
           </ul>
         </nav>
       </header>
 
+      <!-- Navbar Mobile -->
+      <header
+        class="fixed translate-y-full bottom-0 transition duration-300 bg-grayc/60 w-full backdrop-blur-md rounded-t-3xl drop-shadow-lg navMobile"
+      >
+        <ul class="flex py-10 px-10 gap-5 flex-col justify-center relative">
+          <a href="" class="text-2xl font-semibold text-white">About</a>
+          <a href=" " class="text-2xl font-semibold text-white/60">Skills</a>
+          <a href=" " class="text-2xl font-semibold text-white/60">Portfolio</a>
+          <a href=" " class="text-2xl font-semibold text-white/60">Contact</a>
+          <div class="absolute right-10 top-10">
+            <button
+              class="bg-red-700/30 border border-red-600 p-2 rounded-lg"
+              onclick="closeNav()"
+            >
+              <img src="../dist/assets/x.svg" alt="" />
+            </button>
+          </div>
+        </ul>
+      </header>
       <!-- about -->
-      <section class="about h-screen">
+      <section class="about lg:h-screen">
         <div class="container__custom">
-          <div class="grid grid-cols-2">
+          <div class="lg:grid lg:grid-cols-2">
             <div class="flex justify-center items-center">
               <img src="../dist/assets/main/avatar.png" alt="" />
             </div>
-            <div class="flex justify-center flex-col text-white pl-16">
-              <div class="w-[280px]">
-                <span class="text-4xl leading-normal">
+            <div class="flex justify-center flex-col text-white lg:pl-16">
+              <div class="lg:w-[280px]">
+                <span
+                  class="text-4xl leading-normal flex flex-col lg:items-start items-center lg:text-left"
+                >
                   Hello, I`m a <span class="font-bold">UX/UI Designer</span>
                   <span class="text-2xl">Erin Geidt</span>
                 </span>
               </div>
-              <div class="grid grid-cols-2 py-10 gap-5">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 py-10 gap-5"
+              >
                 <a
                   href="#"
                   class="py-3 px-5 rounded-xl font-semibold w-full bg-purple-700 hover:bg-purple-800 transition ease-in-out flex gap-2 items-center justify-between"
@@ -56,7 +105,7 @@
                 </a>
                 <a
                   href="#"
-                  class="bg-grayc py-3 px-5 rounded-xl font-semibold w-full col-span-2 flex gap-3 items-center"
+                  class="bg-grayc py-3 px-5 rounded-xl font-semibold w-full lg:col-span-2 md:col-span-2 flex gap-3 items-center"
                 >
                   <img
                     src="../dist/assets/telegram.svg"
@@ -75,10 +124,12 @@
       </section>
 
       <!-- quote -->
-      <section class="quote">
+      <section class="quote my-16 lg:my-0">
         <div class="container__custom">
           <i class="text-graywhite mt-5">Massimo Vignelli:</i>
-          <p class="text-xl text-white font-medium mt-4 leading-relaxed">
+          <p
+            class="text-xl text-white font-medium mt-4 leading-relaxed text-center"
+          >
             <i>
               “The life of a designer is a constant struggle. Fight against
               ugliness. Just like a doctor fights a disease. For us, visual
@@ -92,14 +143,18 @@
       <!-- skills -->
       <section class="skills my-28">
         <div class="container__custom">
-          <h2 class="text-4xl font-bold text-white">Skills</h2>
-          <div class="grid grid-cols-3 gap-5 py-10">
+          <h2 class="text-4xl font-bold text-white lg:text-left text-center">
+            Skills
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10"
+          >
             <div
               class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
             >
               <img
                 src="../dist/assets/skills/adobe-xd.svg"
-                class="w-[35px]"
+                class="w-[35px] md:w-[45px]"
                 alt=""
               />
               <span>Adobe XD</span>
@@ -109,7 +164,7 @@
             >
               <img
                 src="../dist/assets/skills/figma.svg"
-                class="w-[35px]"
+                class="w-[35px] md:w-[45px"
                 alt=""
               />
               <span>Figma</span>
@@ -119,7 +174,7 @@
             >
               <img
                 src="../dist/assets/skills/tailwindcss-icon.svg"
-                class="w-[35px]"
+                class="w-[35px] md:w-[45px"
                 alt=""
               />
               <span>Tailwind CSS</span>
@@ -129,7 +184,7 @@
             >
               <img
                 src="../dist/assets/skills/html-5.svg"
-                class="w-[35px]"
+                class="w-[35px] md:w-[45px"
                 alt=""
               />
               <span>HTML</span>
@@ -139,7 +194,7 @@
             >
               <img
                 src="../dist/assets/skills/css-3.svg"
-                class="w-[35px]"
+                class="w-[35px] md:w-[45px"
                 alt=""
               />
               <span>CSS</span>
@@ -149,7 +204,7 @@
             >
               <img
                 src="../dist/assets/skills/react.svg"
-                class="w-[35px]"
+                class="w-[35px] md:w-[45px"
                 alt=""
               />
               <span>React js</span>
@@ -161,8 +216,12 @@
       <!-- portfolio -->
       <section class="portfolio my-28">
         <div class="container__custom">
-          <h2 class="text-4xl font-bold text-white">Portfolio</h2>
-          <div class="grid grid-cols-3 gap-10 py-14">
+          <h2 class="text-4xl font-bold text-white lg:text-left text-center">
+            Portfolio
+          </h2>
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-10 gap-16 py-14"
+          >
             <div class="flex flex-col items-center">
               <img
                 src="../dist/assets/portfolio/Dribbble-1-.png"
@@ -194,7 +253,9 @@
               >
             </div>
           </div>
-          <div class="grid grid-cols-4 gap-16 py-14 text-white">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-1 lg:gap-16 gap-6 py-14 text-white"
+          >
             <div class="flex justify-center items-center">
               <a href="" class="text-xl">See More</a>
             </div>
@@ -231,7 +292,9 @@
       <section class="contact my-20">
         <div class="container__custom">
           <h2 class="text-4xl font-bold text-white">Contact</h2>
-          <div class="grid grid-cols-3 gap-10 my-10">
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 my-10"
+          >
             <div class="card text-white flex justify-center flex-col">
               <div class="grid grid-cols-4 gap-2 py-2">
                 <a
@@ -299,5 +362,8 @@
         </div>
       </section>
     </div>
+
+    <!-- Javacript -->
+    <script src="app.js"></script>
   </body>
 </html>

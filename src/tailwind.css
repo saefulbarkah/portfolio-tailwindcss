@@ -7,7 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .container__custom {
-  @apply mx-[150px];
+  @apply lg:mx-[150px] mx-[30px];
 }
 
 .card {
