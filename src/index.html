@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Website Porfolio</title>
     <link rel="stylesheet" href="../dist/global.css" />
     <link
       rel="stylesheet"
@@ -13,9 +13,10 @@
   </head>
   <body class="bg-dark">
     <div class="wrapper">
+      <!-- navbar -->
       <header class="w-full sticky top-0 bg-dark/80 backdrop-blur-sm">
         <nav class="flex justify-center py-5 container__custom">
-          <ul class="flex gap-10 text-xl text-graywhite">
+          <ul class="flex gap-10 text-xl text-graywhite font-semibold">
             <li class="text-white"><a href="">About</a></li>
             <li><a href="">Skills</a></li>
             <li><a href="">Portfolio</a></li>
@@ -24,6 +25,7 @@
         </nav>
       </header>
 
+      <!-- about -->
       <section class="about h-screen">
         <div class="container__custom">
           <div class="grid grid-cols-2">
@@ -72,6 +74,7 @@
         </div>
       </section>
 
+      <!-- quote -->
       <section class="quote">
         <div class="container__custom">
           <i class="text-graywhite mt-5">Massimo Vignelli:</i>
@@ -86,12 +89,13 @@
         </div>
       </section>
 
+      <!-- skills -->
       <section class="skills my-28">
         <div class="container__custom">
           <h2 class="text-4xl font-bold text-white">Skills</h2>
           <div class="grid grid-cols-3 gap-5 py-10">
             <div
-              class="card text-white gap-5 font-semibold card-hover capitalize"
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
             >
               <img
                 src="../dist/assets/skills/adobe-xd.svg"
@@ -101,7 +105,7 @@
               <span>Adobe XD</span>
             </div>
             <div
-              class="card text-white gap-5 font-semibold card-hover capitalize"
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
             >
               <img
                 src="../dist/assets/skills/figma.svg"
@@ -111,7 +115,7 @@
               <span>Figma</span>
             </div>
             <div
-              class="card text-white gap-5 font-semibold card-hover capitalize"
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
             >
               <img
                 src="../dist/assets/skills/tailwindcss-icon.svg"
@@ -121,7 +125,7 @@
               <span>Tailwind CSS</span>
             </div>
             <div
-              class="card text-white gap-5 font-semibold card-hover capitalize"
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
             >
               <img
                 src="../dist/assets/skills/html-5.svg"
@@ -131,7 +135,7 @@
               <span>HTML</span>
             </div>
             <div
-              class="card text-white gap-5 font-semibold card-hover capitalize"
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
             >
               <img
                 src="../dist/assets/skills/css-3.svg"
@@ -141,7 +145,7 @@
               <span>CSS</span>
             </div>
             <div
-              class="card text-white gap-5 font-semibold card-hover capitalize"
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
             >
               <img
                 src="../dist/assets/skills/react.svg"
@@ -154,6 +158,7 @@
         </div>
       </section>
 
+      <!-- portfolio -->
       <section class="portfolio my-28">
         <div class="container__custom">
           <h2 class="text-4xl font-bold text-white">Portfolio</h2>
@@ -217,6 +222,78 @@
                 >Figma files
                 <img src="../dist/assets/arrow.svg" alt="" />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact my-20">
+        <div class="container__custom">
+          <h2 class="text-4xl font-bold text-white">Contact</h2>
+          <div class="grid grid-cols-3 gap-10 my-10">
+            <div class="card text-white flex justify-center flex-col">
+              <div class="grid grid-cols-4 gap-2 py-2">
+                <a
+                  href=""
+                  class="shadow-sm rounded-lg shadow-green-600 p-2 col-span-3 px-5 flex items-center font-semibold"
+                >
+                  Whatsapp
+                  <img src="../dist/assets/arrow.svg" class="ml-auto" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="p-2 flex items-center bg-green-500/60 justify-center rounded-lg"
+                >
+                  <img
+                    src="../dist/assets/whatsapp-icon.svg"
+                    class="w-[30px]"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="card text-white flex justify-center flex-col">
+              <div class="grid grid-cols-4 gap-2 py-2">
+                <a
+                  href=""
+                  class="shadow-sm rounded-lg shadow-blue-600 p-2 col-span-3 px-5 flex items-center font-semibold"
+                >
+                  Facebook
+                  <img src="../dist/assets/arrow.svg" class="ml-auto" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="p-2 flex items-center bg-blue-500/60 justify-center rounded-lg"
+                >
+                  <img
+                    src="../dist/assets/facebook.svg"
+                    class="w-[30px]"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="card text-white flex justify-center flex-col">
+              <div class="grid grid-cols-4 gap-2 py-2">
+                <a
+                  href=""
+                  class="shadow-sm rounded-lg shadow-white p-2 col-span-3 px-5 flex items-center font-semibold"
+                >
+                  Email
+                  <img src="../dist/assets/arrow.svg" class="ml-auto" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="p-2 flex items-center bg-white justify-center rounded-lg"
+                >
+                  <img
+                    src="../dist/assets/google-gmail.svg"
+                    class="w-[30px]"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
