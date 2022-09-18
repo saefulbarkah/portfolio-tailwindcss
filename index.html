@@ -1,1 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Porfolio</title>
+<!--     <link rel="stylesheet" href="../dist/global.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link
+      rel="stylesheet"
+      href="../node_modules/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bg-dark overflow-x-hidden">
+    <div class="wrapper">
+      <!-- navbar desktop -->
+      <header class="w-full sticky top-0 bg-dark/50 backdrop-blur-md">
+        <nav
+          class="lg:justify-center justify-between py-5 container__custom flex"
+        >
+          <ul class="gap-10 text-md text-graywhite lg:flex hidden">
+            <li class="transition menu active">
+              <a href="#about" class="hover:text-white transition duration-300"
+                >About</a
+              >
+            </li>
+            <li class="menu">
+              <a href="#skills" class="hover:text-white transition duration-300"
+                >Skills</a
+              >
+            </li>
+            <li class="menu">
+              <a
+                href="#portfolio"
+                class="hover:text-white transition duration-300"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu">
+              <a
+                href="#contact"
+                class="hover:text-white transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="lg:hidden flex">
+            <span class="text-2xl text-white font-bold">Erin Geidt</span>
+          </div>
+          <ul class="gap-10 text-md text-graywhite lg:hidden flex items-center">
+            <button onclick="openNav()">
+              <img src="../dist/assets/menu.svg" alt="" />
+            </button>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Navbar Mobile -->
+      <header
+        class="fixed translate-y-full bottom-0 transition duration-300 bg-grayc/60 w-full backdrop-blur-md rounded-t-3xl drop-shadow-lg navMobile"
+      >
+        <ul class="flex py-10 px-10 gap-5 flex-col justify-center relative">
+          <a href="#about" class="text-2xl font-semibold text-white">About</a>
+          <a href="#skills" class="text-2xl font-semibold text-white/60"
+            >Skills</a
+          >
+          <a href="#portfolio" class="text-2xl font-semibold text-white/60"
+            >Portfolio</a
+          >
+          <a href="#contact" class="text-2xl font-semibold text-white/60"
+            >Contact</a
+          >
+          <div class="absolute right-10 top-10">
+            <button
+              class="bg-red-700/30 border border-red-600 p-2 rounded-lg"
+              onclick="closeNav()"
+            >
+              <img src="../dist/assets/x.svg" alt="" />
+            </button>
+          </div>
+        </ul>
+      </header>
+
+      <!-- about -->
+      <section class="about pb-20" id="about">
+        <div class="container__custom">
+          <div class="lg:grid lg:grid-cols-2">
+            <div class="flex justify-center items-center">
+              <img src="../dist/assets/main/avatar.png" alt="" />
+            </div>
+            <div class="flex justify-center flex-col text-white lg:pl-16">
+              <div class="lg:w-[280px]">
+                <span
+                  class="text-4xl leading-normal flex flex-col lg:items-start items-center lg:text-left"
+                >
+                  Hello, I`m a <span class="font-bold">UX/UI Designer</span>
+                  <span class="text-2xl">Erin Geidt</span>
+                </span>
+              </div>
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 py-10 gap-5"
+              >
+                <a
+                  href="#"
+                  class="py-3 px-5 rounded-xl font-semibold w-full bg-purple-700 hover:bg-purple-800 transition ease-in-out flex gap-2 items-center justify-between"
+                >
+                  Hire me
+                  <img src="../dist/assets/arrow.svg" alt="" />
+                </a>
+                <a
+                  href="#"
+                  class="bg-grayc py-3 px-5 rounded-xl font-semibold w-full flex gap-2 items-center justify-between"
+                >
+                  Portfolio
+                  <img src="../dist/assets/arrow.svg" alt="" />
+                </a>
+                <a
+                  href="#"
+                  class="bg-grayc py-3 px-5 rounded-xl font-semibold w-full lg:col-span-2 md:col-span-2 flex gap-3 items-center"
+                >
+                  <img
+                    src="../dist/assets/telegram.svg"
+                    class="w-[28px]"
+                    alt=""
+                  />
+                  Get in touch by Telegram
+                  <div class="ml-auto">
+                    <img src="../dist/assets/arrow.svg" width="" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- quote -->
+      <section class="quote pt-20" id="quote">
+        <div class="container__custom">
+          <i class="text-graywhite mt-5">Massimo Vignelli:</i>
+          <p
+            class="text-xl text-white font-medium mt-4 leading-relaxed text-center"
+          >
+            <i>
+              “The life of a designer is a constant struggle. Fight against
+              ugliness. Just like a doctor fights a disease. For us, visual
+              disease is what we have around us, and what we are trying to do
+              is, one way or another, cure the environment through design.”
+            </i>
+          </p>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="skills pt-20 overflow-x-hidden" id="skills">
+        <div class="container__custom">
+          <h2 class="text-4xl font-bold text-white lg:text-left text-center">
+            Skills
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10"
+          >
+            <div
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <img
+                src="../dist/assets/skills/adobe-xd.svg"
+                class="w-[35px] md:w-[45px]"
+                alt=""
+              />
+              <span>Adobe XD</span>
+            </div>
+            <div
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
+              data-aos="fade-down"
+              data-aos-duration="800"
+            >
+              <img
+                src="../dist/assets/skills/figma.svg"
+                class="w-[35px] md:w-[45px"
+                alt=""
+              />
+              <span>Figma</span>
+            </div>
+            <div
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
+              data-aos="fade-left"
+            >
+              <img
+                src="../dist/assets/skills/tailwindcss-icon.svg"
+                class="w-[35px] md:w-[45px"
+                alt=""
+              />
+              <span>Tailwind CSS</span>
+            </div>
+            <div
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <img
+                src="../dist/assets/skills/html-5.svg"
+                class="w-[35px] md:w-[45px"
+                alt=""
+              />
+              <span>HTML</span>
+            </div>
+            <div
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <img
+                src="../dist/assets/skills/css-3.svg"
+                class="w-[35px] md:w-[45px"
+                alt=""
+              />
+              <span>CSS</span>
+            </div>
+            <div
+              class="card text-white gap-5 font-semibold card-hover capitalize flex items-center"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
+              <img
+                src="../dist/assets/skills/react.svg"
+                class="w-[35px] md:w-[45px"
+                alt=""
+              />
+              <span>React js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section class="portfolio pt-20" id="portfolio">
+        <div class="container__custom">
+          <h2
+            class="text-4xl font-bold text-white lg:text-left text-center mb-12"
+          >
+            Portfolio
+          </h2>
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-10 gap-16">
+            <div class="flex flex-col items-center">
+              <img
+                src="../dist/assets/portfolio/Dribbble-1-.png"
+                class="shadow-xl"
+                alt=""
+              />
+              <span class="mt-5 font-semibold text-2xl text-white"
+                >App Design</span
+              >
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="../dist/assets/portfolio/Behance Travel1.png"
+                class="shadow-xl"
+                alt=""
+              />
+              <span class="mt-5 font-semibold text-2xl text-white"
+                >Web Design</span
+              >
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="../dist/assets/portfolio/BehanceS.png"
+                class="shadow-xl"
+                alt=""
+              />
+              <span class="mt-5 font-semibold text-2xl text-white"
+                >App Design</span
+              >
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-1 lg:gap-16 gap-6 py-14 text-white"
+          >
+            <div class="flex justify-center items-center">
+              <a href="" class="text-xl">See More</a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href=""
+                class="w-full bg-grayc py-2 px-5 rounded-xl text-xl flex justify-between"
+              >
+                Dribbble
+                <img src="../dist/assets/arrow.svg" alt="" />
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href=""
+                class="w-full py-2 px-5 bg-purple-700 rounded-lg text-xl flex justify-between"
+                >Behance
+                <img src="../dist/assets/arrow.svg" alt="" />
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href=""
+                class="w-full py-2 px-5 rounded-lg bg-grayc text-xl flex justify-between"
+                >Figma files
+                <img src="../dist/assets/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact pb-36 pt-12" id="contact">
+        <div class="container__custom">
+          <h2 class="text-4xl font-bold text-white">Contact</h2>
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-5"
+          >
+            <div class="card text-white flex justify-center flex-col">
+              <div class="grid grid-cols-4 gap-2 py-2">
+                <a
+                  href=""
+                  class="shadow-sm rounded-lg shadow-green-600 p-2 col-span-3 px-5 flex items-center font-semibold"
+                >
+                  Whatsapp
+                  <img src="../dist/assets/arrow.svg" class="ml-auto" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="p-2 flex items-center bg-green-500/60 justify-center rounded-lg"
+                >
+                  <img
+                    src="../dist/assets/whatsapp-icon.svg"
+                    class="w-[30px]"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="card text-white flex justify-center flex-col">
+              <div class="grid grid-cols-4 gap-2 py-2">
+                <a
+                  href=""
+                  class="shadow-sm rounded-lg shadow-blue-600 p-2 col-span-3 px-5 flex items-center font-semibold"
+                >
+                  Facebook
+                  <img src="../dist/assets/arrow.svg" class="ml-auto" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="p-2 flex items-center bg-blue-500/60 justify-center rounded-lg"
+                >
+                  <img
+                    src="../dist/assets/facebook.svg"
+                    class="w-[30px]"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="card text-white flex justify-center flex-col">
+              <div class="grid grid-cols-4 gap-2 py-2">
+                <a
+                  href=""
+                  class="shadow-sm rounded-lg shadow-white p-2 col-span-3 px-5 flex items-center font-semibold"
+                >
+                  Email
+                  <img src="../dist/assets/arrow.svg" class="ml-auto" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="p-2 flex items-center bg-white justify-center rounded-lg"
+                >
+                  <img
+                    src="../dist/assets/google-gmail.svg"
+                    class="w-[30px]"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Javacript -->
+    <script src="/dist/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
